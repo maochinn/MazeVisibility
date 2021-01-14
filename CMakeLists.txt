@@ -9,6 +9,7 @@ include_directories(${INCLUDE_DIR})
 include_directories(${LIB_DIR})
 
 add_Definitions("-D_XKEYCHECK_H")
+add_definitions(-DPROJECT_DIR="${PROJECT_SOURCE_DIR}")
 
 add_executable(MazeVisibility
     ${SRC_DIR}MapWidget.h
